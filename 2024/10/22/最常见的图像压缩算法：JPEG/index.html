@@ -17,11 +17,11 @@
 <meta property="og:site_name" content="Abalone27&#39;s Blog">
 <meta property="og:description" content="DIP-JPEG图像压缩 为什么JPEFG有用 人类眼镜的细胞对图像的感知程度，亮度比色度感知强烈的多。 因此减少人类眼镜感知较弱的区域，即减少颜色的差异，就可以实现压缩。 压缩步骤  首先需要进行色彩空间转换，每一个像素都有RGB的红绿蓝叠加，算法需要通过一个固定的公式算出Y（亮度）、Cb（蓝色色度）、Cr（红色色度）。 进行色度缩减取样，很多数据会被删除。将蓝色和红色色度分量层的像素按照2x2">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://abalone27.github.io/2024/10/22/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9AJPEG/images/jpeg-0.png">
+<meta property="og:image" content="https://abalone27.github.io/images/jpeg-0.png">
 <meta property="og:image" content="https://abalone27.github.io/images/jpeg-1.png">
 <meta property="og:image" content="https://abalone27.github.io/images/jpeg-2.png">
 <meta property="article:published_time" content="2024-10-22T08:22:03.000Z">
-<meta property="article:modified_time" content="2024-10-26T06:04:19.773Z">
+<meta property="article:modified_time" content="2024-10-26T06:07:38.471Z">
 <meta property="article:author" content="Yuxiang Bao">
 <meta property="article:tag" content="JPEG">
 <meta property="article:tag" content="数字图像处理">
@@ -29,7 +29,7 @@
 <meta property="article:tag" content="图像压缩">
 <meta property="article:tag" content="哈夫曼编码">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://abalone27.github.io/2024/10/22/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9AJPEG/images/jpeg-0.png">
+<meta name="twitter:image" content="https://abalone27.github.io/images/jpeg-0.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
@@ -509,7 +509,7 @@ Cosine Transform,DCT
 </blockquote></li>
 <li><p>DCT后我们会有一个常数表，我们要把其中的各个值除上对应量化表中的各个值，并四舍五入取整。</p>
 <figure>
-<img src="images/jpeg-0.png" alt="截屏2024-10-22 15.28.33" />
+<img src="/images/jpeg-0.png" alt="截屏2024-10-22 15.28.33" />
 <figcaption aria-hidden="true">截屏2024-10-22 15.28.33</figcaption>
 </figure></li>
 </ol>
@@ -606,7 +606,7 @@ class HuffmanTable {
             <p>原文作者：<a href="https://abalone27.github.io">Yuxiang Bao</a>
             <p>原文链接：<a href="https://abalone27.github.io/2024/10/22/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9AJPEG/">https://abalone27.github.io/2024/10/22/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9AJPEG/</a>
             <p>发表日期：<a href="https://abalone27.github.io/2024/10/22/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9AJPEG/">October 22nd 2024, 4:22:03 pm</a>
-            <p>更新日期：<a href="https://abalone27.github.io/2024/10/22/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9AJPEG/">October 26th 2024, 2:04:19 pm</a>
+            <p>更新日期：<a href="https://abalone27.github.io/2024/10/22/%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9AJPEG/">October 26th 2024, 2:07:38 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     <!-- paginator -->
