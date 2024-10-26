@@ -17,9 +17,9 @@
 <meta property="og:site_name" content="Abalone27&#39;s Blog">
 <meta property="og:description" content="DIP-JPEG图像压缩 为什么JPEFG有用 人类眼镜的细胞对图像的感知程度，亮度比色度感知强烈的多。 因此减少人类眼镜感知较弱的区域，即减少颜色的差异，就可以实现压缩。 压缩步骤  首先需要进行色彩空间转换，每一个像素都有RGB的红绿蓝叠加，算法需要通过一个固定的公式算出Y（亮度）、Cb（蓝色色度）、Cr（红色色度）。 进行色度缩减取样，很多数据会被删除。将蓝色和红色色度分量层的像素按照2x2">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://abalone27.github.io/assets/loading.svg">
-<meta property="og:image" content="https://abalone27.github.io/assets/loading.svg">
-<meta property="og:image" content="https://abalone27.github.io/assets/loading.svg">
+<meta property="og:image" content="https://abalone27.github.io/images/jpeg-0.png">
+<meta property="og:image" content="https://abalone27.github.io/images/jpeg-1.png">
+<meta property="og:image" content="https://abalone27.github.io/images/jpeg-2.png">
 <meta property="article:published_time" content="2024-10-22T08:22:03.000Z">
 <meta property="article:modified_time" content="2024-10-26T06:07:38.471Z">
 <meta property="article:author" content="Yuxiang Bao">
@@ -29,7 +29,7 @@
 <meta property="article:tag" content="图像压缩">
 <meta property="article:tag" content="哈夫曼编码">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://abalone27.github.io/assets/loading.svg">
+<meta name="twitter:image" content="https://abalone27.github.io/images/jpeg-0.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
@@ -521,7 +521,7 @@ Cosine Transform,DCT
 </blockquote></li>
 <li><p>DCT后我们会有一个常数表，我们要把其中的各个值除上对应量化表中的各个值，并四舍五入取整。</p>
 <figure>
-<img src="/assets/loading.svg" data-original="/images/jpeg-0.png" alt="截屏2024-10-22 15.28.33" />
+<img src="/images/jpeg-0.png" alt="截屏2024-10-22 15.28.33" />
 <figcaption aria-hidden="true">截屏2024-10-22 15.28.33</figcaption>
 </figure></li>
 </ol>
@@ -538,14 +538,14 @@ Cosine Transform,DCT
 <ul>
 <li><p>在这一步骤中，我们列出所有区块中的亮度与色度数值（更改后）。然而是这样的顺序：</p>
 <figure>
-<img src="/assets/loading.svg" data-original="/images/jpeg-1.png" alt="截屏2024-10-22 15.38.56" />
+<img src="/images/jpeg-1.png" alt="截屏2024-10-22 15.38.56" />
 <figcaption aria-hidden="true">截屏2024-10-22 15.38.56</figcaption>
 </figure></li>
 <li><p>因为这样子更可能找到一连串的非0数字。</p></li>
 <li><p>接下来，在我们列出的数字中，使用游程编码Run length encoding
 algorithm，列出我们有几个0。这样只有几十个数字的列表显然比0～255的方法压缩的多。</p></li>
 </ul>
-<p><img src="/assets/loading.svg" data-original="/images/jpeg-2.png" style="zoom:50%;" /></p>
+<p><img src="/images/jpeg-2.png" style="zoom:50%;" /></p>
 <h3 id="哈夫曼编码-huffman-encoding">哈夫曼编码 Huffman Encoding</h3>
 <p>​
 这种独立编码也运用在H.264视频压缩算法中（也被称为高级视频编码，AVC），是目前Youtube上传视频推荐的视频压缩算法。它使用了色度所见取样或色度抽样技术，以及离散余弦变换和量化技术的一些变种。</p>
@@ -923,18 +923,5 @@ class HuffmanTable {
             <script src="/scripts/share.js" async></script>
         <!-- mermaid -->
             <script src='https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js' onload="window.mermaid.initialize({theme: 'dark'})" async></script>
-    
-        <style>
-            [bg-lazy] {
-                background-image: none !important;
-                background-color: #eee !important;
-            }
-        </style>
-        <script>
-            window.imageLazyLoadSetting = {
-                isSPA: false,
-                preloadRatio: 1,
-                processImages: null,
-            };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body>
+    </body>
 </html>
