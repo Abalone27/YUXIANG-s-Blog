@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Yuxiang Bao">
     <meta name="renderer" content="webkit">
-    <meta name="copyright" content="John Doe">
+    <meta name="copyright" content="Yuxiang Bao">
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     <meta name="description" content="">
     <meta name="description" content="处理机调度与死锁🔒  Q:如果系统只有一个cpu,有两个进程要运行.进程A的运行时间将是1小时,进程B的运行时间是1分钟.那么认为操作系统让哪个进程先运行比较合理?  A：与操作系统的调度策略有关，即更重视优先级还是到来顺序、时长等因素。 调度 对处理机（CPU）资源进行分配。 调度层次 高级（作业）调度、中级（内存）调度、低级（进程）调度。 区分主要是运行频率，低级调度最频繁，也是重点。">
@@ -17,19 +17,19 @@
 <meta property="og:site_name" content="Abalone27&#39;s Blog">
 <meta property="og:description" content="处理机调度与死锁🔒  Q:如果系统只有一个cpu,有两个进程要运行.进程A的运行时间将是1小时,进程B的运行时间是1分钟.那么认为操作系统让哪个进程先运行比较合理?  A：与操作系统的调度策略有关，即更重视优先级还是到来顺序、时长等因素。 调度 对处理机（CPU）资源进行分配。 调度层次 高级（作业）调度、中级（内存）调度、低级（进程）调度。 区分主要是运行频率，低级调度最频繁，也是重点。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://abalone27.github.io/2024/10/26/images/diaodu1.png">
-<meta property="og:image" content="https://abalone27.github.io/2024/10/26/images/diaodu2.png">
-<meta property="og:image" content="https://abalone27.github.io/2024/10/26/images/diaodu0.png">
-<meta property="og:image" content="https://abalone27.github.io/2024/10/26/images/bank.png">
-<meta property="og:image" content="https://abalone27.github.io/2024/10/26/images/diaodu3.png">
+<meta property="og:image" content="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/images/diaodu1.png">
+<meta property="og:image" content="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/images/diaodu2.png">
+<meta property="og:image" content="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/images/diaodu0.png">
+<meta property="og:image" content="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/images/bank.png">
+<meta property="og:image" content="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/images/diaodu3.png">
 <meta property="article:published_time" content="2024-10-26T05:43:00.000Z">
-<meta property="article:modified_time" content="2024-10-26T05:43:11.153Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2024-10-26T05:54:28.531Z">
+<meta property="article:author" content="Yuxiang Bao">
 <meta property="article:tag" content="操作系统">
 <meta property="article:tag" content="死锁">
 <meta property="article:tag" content="复习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://abalone27.github.io/2024/10/26/images/diaodu1.png">
+<meta name="twitter:image" content="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/images/diaodu1.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
@@ -260,6 +260,31 @@
         <!-- fixed footer -->
         <footer class="footer-fixed">
     <!-- donate button -->
+    <div class="donate-popup donate-popup--hidden">
+    <div class="donate-popup__title">Buy Me A Coffee</div>
+    <div class="donate-popup__content">
+        <div class="donate-popup__content-description">If this post helped you, please consider buying the author a cup of sugar-free coffee ☕️.</div>
+        <img
+            class="donate-popup__content-qrCode"
+            title="Wechat"
+            alt="Wechat"
+            src="/assets/donate-wechat.png"
+        ></img>
+        <img
+            class="donate-popup__content-qrCode"
+            title="Alipay"
+            alt="Alipay"
+            src="/assets/donate-alipay.png"
+        ></img>
+    </div>
+</div>
+
+    <div
+        title="Donate to the author"
+        class="footer-fixed-btn footer-fixed-btn--hidden donate-btn"
+    >
+        <i class="fas fa-donate"></i>
+    </div>
 
     <!-- back to top button -->
     <div class="footer-fixed-btn footer-fixed-btn--hidden back-top">
@@ -466,7 +491,7 @@
 <p>高级（作业）调度、中级（内存）调度、低级（进程）调度。</p>
 <p>区分主要是运行频率，<strong>低级调度最频繁</strong>，也是重点。</p>
 <figure>
-<img src="../images/diaodu1.png" alt="img" />
+<img src="images/diaodu1.png" alt="img" />
 <figcaption aria-hidden="true">img</figcaption>
 </figure>
 <p><strong>后备队列</strong>（Spooling Queue 或 Backup
@@ -484,7 +509,7 @@ Queue）是指操作系统或系统调度过程中用于存放<strong>尚未进�
 </ol>
 <p>（1）时间片原则、（2）优先权原则 、（3）短作业（进程）优先原则</p>
 <figure>
-<img src="../images/diaodu2.png" alt="img" />
+<img src="images/diaodu2.png" alt="img" />
 <figcaption aria-hidden="true">img</figcaption>
 </figure>
 <h2 id="周转时间-turnaround-time">1. 周转时间 (Turnaround Time)</h2>
@@ -542,7 +567,7 @@ R_p = \frac{W_i + S_i}{S_i}
 <li><h3 id="多级队列调度">多级队列调度</h3></li>
 </ol>
 <p>​ 将就绪队列分为多种不同队列，不同队列使用不同调度算法</p>
-<p>​ <img src="../images/diaodu0.png" alt="img" /></p>
+<p>​ <img src="images/diaodu0.png" alt="img" /></p>
 <ol start="7" type="1">
 <li><h3 id="多级反馈队列调度算法">多级反馈队列调度算法</h3></li>
 </ol>
@@ -608,7 +633,7 @@ Pn〉序列为安全序列)，来为每个进程Pi分配其所需资源，直至
 <p>一个n×m的矩阵，用以表示每一个进程还需的各类资源数</p>
 <p>Need［i,j］=Max［i,j］-Allocation［i,j］</p>
 <figure>
-<img src="../images/bank.png" alt="银行家算法" />
+<img src="images/bank.png" alt="银行家算法" />
 <figcaption aria-hidden="true">银行家算法</figcaption>
 </figure>
 <p>设Requesti是进程Pi的请求向量，如果Requesti［j］=K，表示进程Pi需要K个Rj类型的资源。当Pi发出资源请求后，系统按下述步骤进行检查：</p>
@@ -652,7 +677,7 @@ Work［j］∶=Work［i］+Allocation［i,j］; Finish［i］∶=true; go 
 <h2 id="解除死锁">解除死锁</h2>
 <p>利用死锁定理</p>
 <figure>
-<img src="../images/diaodu3.png" alt="img" />
+<img src="images/diaodu3.png" alt="img" />
 <figcaption aria-hidden="true">img</figcaption>
 </figure>
 <p>对于死锁的解除，即<strong>（1）剥夺资源，(2) 撤消进程</strong>。</p>
@@ -662,10 +687,10 @@ Work［j］∶=Work［i］+Allocation［i,j］; Finish［i］∶=true; go 
     </article>
     <!-- license -->
         <div class="license-wrapper">
-            <p>原文作者：<a href="https://abalone27.github.io">John Doe</a>
+            <p>原文作者：<a href="https://abalone27.github.io">Yuxiang Bao</a>
             <p>原文链接：<a href="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/">https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/</a>
             <p>发表日期：<a href="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/">October 26th 2024, 1:43:00 pm</a>
-            <p>更新日期：<a href="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/">October 26th 2024, 1:43:11 pm</a>
+            <p>更新日期：<a href="https://abalone27.github.io/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/">October 26th 2024, 1:54:28 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     <!-- paginator -->
@@ -910,7 +935,7 @@ Turnaround Time)</span></a></li><li class="toc-item toc-level-2"><a class="toc-l
     var siteMeta = {
         url: "https://abalone27.github.io",
         root: siteMetaRoot,
-        author: "John Doe"
+        author: "Yuxiang Bao"
     }
 </script>
 
