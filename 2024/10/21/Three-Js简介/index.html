@@ -9,7 +9,7 @@
     <meta name="renderer" content="webkit">
     <meta name="copyright" content="Yuxiang Bao">
         <meta name="keywords" content="computer science,technology blog,software development,web development,programming,Yuxiang Bao blog,personal blog,鲍宇翔的个人博客,编程,计算机学习">
-    <meta name="description" content="">
+    <meta name="description" content="鲍宇翔的个人博客">
     <meta name="description" content="Three.Js 介绍 Three.js由Ricardo Cabello在2010四月于GitHub首次发布。   JavaScriptの3Dライブラリ”three.js”を使って遊 ...  Three.js是一个跨浏览器的使用JavaScript函数库或API来在网页浏览器中创建和展示三维计算机图形的开源通用 3D 代码库。Three.js使用WebGL渲染图形，也可通过插件使用 WebGPU">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Three.Js简介">
@@ -31,7 +31,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
         <link rel="alternate" href="/atom.xml" title="YuxiangBao&#39;s Blog." type="application/atom+xml">
-    <title>Three.Js简介 · YuxiangBao&#39;s Blog</title>
+    <title>Three.Js简介 · 鲍宇翔的博客</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -571,7 +571,7 @@ colors</strong>）颜色格式来设置颜色的方式一致。</p>
 <h2 id="渲染场景">渲染场景</h2>
 <p>现在，如果将之前写好的代码复制到HTML文件中，你不会在页面中看到任何东西。这是因为我们还没有对它进行真正的渲染。为此，我们需要使用一个被叫做“<strong>渲染循环</strong>”（render
 loop）或者“<strong>动画循环</strong>”（animate loop）的东西。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function animate() &#123; requestAnimationFrame( animate ); renderer.render( scene, camera ); &#125; animate();</span><br></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function <span class="built_in">animate</span>() &#123; <span class="built_in">requestAnimationFrame</span>( animate ); renderer<span class="selector-class">.render</span>( scene, camera ); &#125; <span class="built_in">animate</span>();</span><br></pre></td></tr></table></figure>
 <p>在这里我们创建了一个使渲染器能够在每次屏幕刷新时对场景进行绘制的循环（在大多数屏幕上，刷新率一般是60次/秒）。如果你是一个浏览器游戏开发的新手，你或许会说<em>“为什么我们不直接用
 setInterval 来实现刷新的功能呢？”</em>当然啦，我们的确可以用
 setInterval，但是，<strong>requestAnimationFrame</strong>
@@ -581,7 +581,7 @@ setInterval，但是，<strong>requestAnimationFrame</strong>
 —— 让它旋转起来。</p>
 <p>将下列代码添加到 animate() 函数中 <strong>renderer.render</strong>
 调用的上方：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cube.rotation.x += 0.01; cube.rotation.y += 0.01;</span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">cube</span>.rotation.x += <span class="number">0</span>.<span class="number">01</span>; cube.rotation.y += <span class="number">0</span>.<span class="number">01</span>;</span><br></pre></td></tr></table></figure>
 <p>这段代码每帧都会执行（正常情况下是60次/秒），这就让立方体有了一个看起来很不错的旋转动画。基本上来说，当应用程序运行时，如果你想要移动或者改变任何场景中的东西，都必须要经过这个动画循环。当然，你可以在这个动画循环里调用别的函数，这样你就不会写出有上百行代码的
 <strong>animate</strong> 函数。</p>
 <h2 id="结果">结果</h2>
@@ -772,6 +772,10 @@ setInterval，但是，<strong>requestAnimationFrame</strong>
                 <span class="iconfont-archer">&#xe606;</span>
                 复习
             </span>
+            <span class="sidebar-tag-name" data-tags="计算机科学导航">
+                <span class="iconfont-archer">&#xe606;</span>
+                计算机科学导航
+            </span>
             <span class="sidebar-tag-name" data-tags="JPEG">
                 <span class="iconfont-archer">&#xe606;</span>
                 JPEG
@@ -792,10 +796,6 @@ setInterval，但是，<strong>requestAnimationFrame</strong>
                 <span class="iconfont-archer">&#xe606;</span>
                 哈夫曼编码
             </span>
-            <span class="sidebar-tag-name" data-tags="计算机科学导航">
-                <span class="iconfont-archer">&#xe606;</span>
-                计算机科学导航
-            </span>
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
@@ -814,13 +814,13 @@ setInterval，但是，<strong>requestAnimationFrame</strong>
             <span class="iconfont-archer">&#xe60a;</span>
             OS
         </span>
-        <span class="sidebar-category-name" data-categories="DIP">
-            <span class="iconfont-archer">&#xe60a;</span>
-            DIP
-        </span>
         <span class="sidebar-category-name" data-categories="计算机科学">
             <span class="iconfont-archer">&#xe60a;</span>
             计算机科学
+        </span>
+        <span class="sidebar-category-name" data-categories="DIP">
+            <span class="iconfont-archer">&#xe60a;</span>
+            DIP
         </span>
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
@@ -845,6 +845,27 @@ setInterval，但是，<strong>requestAnimationFrame</strong>
 
         <!-- import experimental options here -->
         <!-- Custom Font -->
+    <!-- Check browser compatibility of CSS variables -->
+    <script>
+        if (browserSupportCSSVariables === undefined) {
+            var browserSupportCSSVariables = window.CSS && window.CSS.supports && window.CSS.supports('--a', 0);
+        }
+    </script>
+    <script>
+        if (browserSupportCSSVariables) {
+            var customFontName = 'Noto Sans SC:n3,n4,n5,n7'
+            var customFontUrl = 'https://fonts.googleapis.cnpmjs.org/css2?family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap'
+            if (!customFontName) {
+                console.log('Custom font name is not set or read failed');
+            }
+            if (!customFontUrl) {
+                console.log('Custom font url is not set or read failed');
+            }
+        } else {
+            console.error('Current browser doesn\'t support custom font.')
+        }
+    </script>
+    <script src="/scripts/customFontLoader.js" defer></script>
 
         <!-- main func -->
         <script src="/scripts/main.js"></script>

@@ -9,7 +9,7 @@
     <meta name="renderer" content="webkit">
     <meta name="copyright" content="Yuxiang Bao">
         <meta name="keywords" content="computer science,technology blog,software development,web development,programming,Yuxiang Bao blog,personal blog,鲍宇翔的个人博客,编程,计算机学习">
-    <meta name="description" content="">
+    <meta name="description" content="鲍宇翔的个人博客">
     <meta name="description" content="Computer Science Map 计算机科学基础理论（Theroy） 1. 计算性理论 computability theroy 2. 算法 algorithm 3. 信息论 information theroy 4. 密码学 cryptography 5. 其他（逻辑、图论、计算几何、自动机理论、量子计算、并行编程、形式化方法、数据结构） 计算机工程（engineering） 1. 处理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机科学分支 CS Map">
@@ -26,7 +26,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
         <link rel="alternate" href="/atom.xml" title="YuxiangBao&#39;s Blog." type="application/atom+xml">
-    <title>计算机科学分支 CS Map · YuxiangBao&#39;s Blog</title>
+    <title>计算机科学分支 CS Map · 鲍宇翔的博客</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -717,6 +717,10 @@ interacting</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" 
                 <span class="iconfont-archer">&#xe606;</span>
                 复习
             </span>
+            <span class="sidebar-tag-name" data-tags="计算机科学导航">
+                <span class="iconfont-archer">&#xe606;</span>
+                计算机科学导航
+            </span>
             <span class="sidebar-tag-name" data-tags="JPEG">
                 <span class="iconfont-archer">&#xe606;</span>
                 JPEG
@@ -737,10 +741,6 @@ interacting</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" 
                 <span class="iconfont-archer">&#xe606;</span>
                 哈夫曼编码
             </span>
-            <span class="sidebar-tag-name" data-tags="计算机科学导航">
-                <span class="iconfont-archer">&#xe606;</span>
-                计算机科学导航
-            </span>
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
@@ -759,13 +759,13 @@ interacting</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" 
             <span class="iconfont-archer">&#xe60a;</span>
             OS
         </span>
-        <span class="sidebar-category-name" data-categories="DIP">
-            <span class="iconfont-archer">&#xe60a;</span>
-            DIP
-        </span>
         <span class="sidebar-category-name" data-categories="计算机科学">
             <span class="iconfont-archer">&#xe60a;</span>
             计算机科学
+        </span>
+        <span class="sidebar-category-name" data-categories="DIP">
+            <span class="iconfont-archer">&#xe60a;</span>
+            DIP
         </span>
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
@@ -790,6 +790,27 @@ interacting</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" 
 
         <!-- import experimental options here -->
         <!-- Custom Font -->
+    <!-- Check browser compatibility of CSS variables -->
+    <script>
+        if (browserSupportCSSVariables === undefined) {
+            var browserSupportCSSVariables = window.CSS && window.CSS.supports && window.CSS.supports('--a', 0);
+        }
+    </script>
+    <script>
+        if (browserSupportCSSVariables) {
+            var customFontName = 'Noto Sans SC:n3,n4,n5,n7'
+            var customFontUrl = 'https://fonts.googleapis.cnpmjs.org/css2?family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap'
+            if (!customFontName) {
+                console.log('Custom font name is not set or read failed');
+            }
+            if (!customFontUrl) {
+                console.log('Custom font url is not set or read failed');
+            }
+        } else {
+            console.error('Current browser doesn\'t support custom font.')
+        }
+    </script>
+    <script src="/scripts/customFontLoader.js" defer></script>
 
         <!-- main func -->
         <script src="/scripts/main.js"></script>
