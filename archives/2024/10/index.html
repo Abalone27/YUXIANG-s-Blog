@@ -419,22 +419,7 @@
                 <span class="abstract-title-text">OS：处理机调度与死锁🔒</span>
             </a>
             <div class="abstract-content">
-                处理机调度与死锁🔒
-
-Q:如果系统只有一个cpu,有两个进程要运行.进程A的运行时间将是1小时,进程B的运行时间是1分钟.那么认为操作系统让哪个进程先运行比较合理?
-
-A：与操作系统的调度策略有关，即更重视优先级还是到来顺序、时长等因素。
-调度
-对处理机（CPU）资源进行分配。
-调度层次
-高级（作业）调度、中级（内存）调度、低级（进程）调度。
-区分主要是运行频率，低级调度最频繁，也是重点。
-
-
-img
-
-后备队列（Spooling Queue 或 Backup
-Queue）是指操作系统或系统调度过程中用于存放尚未进入内存执行的进程或任务的队列。根据实际情况，后备队列可以位于外存或与外存...
+                
             </div>
             <!-- read more -->
             <div class="abstract-post-meta">
@@ -444,6 +429,12 @@ Queue）是指操作系统或系统调度过程中用于存放尚未进入内存
                 </div>
                 <!-- tags -->
                     <div class="abstract-tags" >
+        <span class="post-category" data-categories="OS">
+            <i class="fas fa-folder post-category-icon"></i>
+            <span class="post-category-text">
+                OS
+            </span>
+        </span>
         <a class="post-tag" href="javascript:void(0);" data-tags="操作系统">操作系统</a>
         <a class="post-tag" href="javascript:void(0);" data-tags="死锁">死锁</a>
         <a class="post-tag" href="javascript:void(0);" data-tags="复习">复习</a>
@@ -458,14 +449,7 @@ Queue）是指操作系统或系统调度过程中用于存放尚未进入内存
                 <span class="abstract-title-text">最常见的图像压缩算法：JPEG</span>
             </a>
             <div class="abstract-content">
-                DIP-JPEG图像压缩
-为什么JPEFG有用
-人类眼镜的细胞对图像的感知程度，亮度比色度感知强烈的多。
-因此减少人类眼镜感知较弱的区域，即减少颜色的差异，就可以实现压缩。
-压缩步骤
-
-首先需要进行色彩空间转换，每一个像素都有RGB的红绿蓝叠加，算法需要通过一个固定的公式算出Y（亮度）、Cb（蓝色色度）、Cr（红色色度）。
-进行色度缩减取样，很多数据会被删除。将蓝色和红色色度分量层的像素按照2x2像素成一个区块这样划分。然后计算每个区块的平均值，然后缩小图像（4:2:0），使得含有1个平均值的由4个像素组成的区块只占一个像素的空间。于是那些我们👀眼睛不易感知的红蓝色度信息量shrink...
+                
             </div>
             <!-- read more -->
             <div class="abstract-post-meta">
@@ -475,6 +459,12 @@ Queue）是指操作系统或系统调度过程中用于存放尚未进入内存
                 </div>
                 <!-- tags -->
                     <div class="abstract-tags" >
+        <span class="post-category" data-categories="DIP">
+            <i class="fas fa-folder post-category-icon"></i>
+            <span class="post-category-text">
+                DIP
+            </span>
+        </span>
         <a class="post-tag" href="javascript:void(0);" data-tags="JPEG">JPEG</a>
         <a class="post-tag" href="javascript:void(0);" data-tags="数字图像处理">数字图像处理</a>
         <a class="post-tag" href="javascript:void(0);" data-tags="算法">算法</a>
@@ -491,19 +481,7 @@ Queue）是指操作系统或系统调度过程中用于存放尚未进入内存
                 <span class="abstract-title-text">Three.Js简介</span>
             </a>
             <div class="abstract-content">
-                Three.Js 介绍
-Three.js由Ricardo Cabello在2010四月于GitHub首次发布。
-
-
-JavaScriptの3Dライブラリ”three.js”を使って遊
-...
-
-Three.js是一个跨浏览器的使用JavaScript函数库或API来在网页浏览器中创建和展示三维计算机图形的开源通用
-3D 代码库。Three.js使用WebGL渲染图形，也可通过插件使用
-WebGPU（实验性）、SVG 和 CSS3D 渲染器。源代码托管在GitHub。
-Installation
-每个 three.js 项目至少需要一个 HTML 文件来定义网页，以及一个
-JavaScrip...
+                
             </div>
             <!-- read more -->
             <div class="abstract-post-meta">
@@ -513,6 +491,12 @@ JavaScrip...
                 </div>
                 <!-- tags -->
                     <div class="abstract-tags" >
+        <span class="post-category" data-categories="前端">
+            <i class="fas fa-folder post-category-icon"></i>
+            <span class="post-category-text">
+                前端
+            </span>
+        </span>
         <a class="post-tag" href="javascript:void(0);" data-tags="前端">前端</a>
         <a class="post-tag" href="javascript:void(0);" data-tags="javascript框架">javascript框架</a>
         <a class="post-tag" href="javascript:void(0);" data-tags="WebGL">WebGL</a>
@@ -528,23 +512,7 @@ JavaScrip...
                 <span class="abstract-title-text">axios简介</span>
             </a>
             <div class="abstract-content">
-                axios
-
-
-axios
-
-axios对原生ajax进行了封装，简化书写，快速开发，用于发送异步请求。
-查看 axios
-docs
-定义
-Axios 是一个基于 promise
-网络请求库，作用于node.js
-和浏览器中。 它是 isomorphic
-的(即同一套代码可以运行在浏览器和node.js中)。在服务端它使用原生 node.js
-http 模块, 而在客户端 (浏览端) 则使用 XMLHttpRequests。
-用例
-发起一个 GET 请求
-1234567891011121314151617181920212223242526272829303132333435363738...
+                
             </div>
             <!-- read more -->
             <div class="abstract-post-meta">
@@ -554,6 +522,12 @@ http 模块, 而在客户端 (浏览端) 则使用 XMLHttpRequests。
                 </div>
                 <!-- tags -->
                     <div class="abstract-tags" >
+        <span class="post-category" data-categories="前端">
+            <i class="fas fa-folder post-category-icon"></i>
+            <span class="post-category-text">
+                前端
+            </span>
+        </span>
         <a class="post-tag" href="javascript:void(0);" data-tags="前端">前端</a>
         <a class="post-tag" href="javascript:void(0);" data-tags="ajax">ajax</a>
         <a class="post-tag" href="javascript:void(0);" data-tags="异步">异步</a>
@@ -569,22 +543,7 @@ http 模块, 而在客户端 (浏览端) 则使用 XMLHttpRequests。
                 <span class="abstract-title-text">计算机科学分支 CS Map</span>
             </a>
             <div class="abstract-content">
-                Computer Science Map
-计算机科学基础理论（Theroy）
-1. 计算性理论 computability
-theroy
-2. 算法 algorithm
-3. 信息论 information theroy
-4. 密码学 cryptography
-5.
-其他（逻辑、图论、计算几何、自动机理论、量子计算、并行编程、形式化方法、数据结构）
-计算机工程（engineering）
-1. 处理机调度
-2. 计算机体系结构 architecure
-3. 软件与编程语言
-4. 编译器 compilers
-5. 操作系统 operating systems
-6. 软件工程 software...
+                
             </div>
             <!-- read more -->
             <div class="abstract-post-meta">
@@ -594,6 +553,12 @@ theroy
                 </div>
                 <!-- tags -->
                     <div class="abstract-tags" >
+        <span class="post-category" data-categories="计算机科学">
+            <i class="fas fa-folder post-category-icon"></i>
+            <span class="post-category-text">
+                计算机科学
+            </span>
+        </span>
         <a class="post-tag" href="javascript:void(0);" data-tags="计算机科学导航">计算机科学导航</a>
 </div>
 
@@ -715,18 +680,6 @@ theroy
                 <span class="iconfont-archer">&#xe606;</span>
                 javascript
             </span>
-            <span class="sidebar-tag-name" data-tags="操作系统">
-                <span class="iconfont-archer">&#xe606;</span>
-                操作系统
-            </span>
-            <span class="sidebar-tag-name" data-tags="死锁">
-                <span class="iconfont-archer">&#xe606;</span>
-                死锁
-            </span>
-            <span class="sidebar-tag-name" data-tags="复习">
-                <span class="iconfont-archer">&#xe606;</span>
-                复习
-            </span>
             <span class="sidebar-tag-name" data-tags="JPEG">
                 <span class="iconfont-archer">&#xe606;</span>
                 JPEG
@@ -751,6 +704,18 @@ theroy
                 <span class="iconfont-archer">&#xe606;</span>
                 计算机科学导航
             </span>
+            <span class="sidebar-tag-name" data-tags="操作系统">
+                <span class="iconfont-archer">&#xe606;</span>
+                操作系统
+            </span>
+            <span class="sidebar-tag-name" data-tags="死锁">
+                <span class="iconfont-archer">&#xe606;</span>
+                死锁
+            </span>
+            <span class="sidebar-tag-name" data-tags="复习">
+                <span class="iconfont-archer">&#xe606;</span>
+                复习
+            </span>
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
@@ -765,10 +730,6 @@ theroy
             <span class="iconfont-archer">&#xe60a;</span>
             前端
         </span>
-        <span class="sidebar-category-name" data-categories="OS">
-            <span class="iconfont-archer">&#xe60a;</span>
-            OS
-        </span>
         <span class="sidebar-category-name" data-categories="DIP">
             <span class="iconfont-archer">&#xe60a;</span>
             DIP
@@ -776,6 +737,10 @@ theroy
         <span class="sidebar-category-name" data-categories="计算机科学">
             <span class="iconfont-archer">&#xe60a;</span>
             计算机科学
+        </span>
+        <span class="sidebar-category-name" data-categories="OS">
+            <span class="iconfont-archer">&#xe60a;</span>
+            OS
         </span>
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
