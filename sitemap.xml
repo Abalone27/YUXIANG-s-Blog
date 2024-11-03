@@ -194,13 +194,6 @@
   </url>
   
   <url>
-    <loc>https://abalone27.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%88%AA/</loc>
-    <lastmod>2024-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://abalone27.github.io/tags/JPEG/</loc>
     <lastmod>2024-11-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -235,6 +228,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://abalone27.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%88%AA/</loc>
+    <lastmod>2024-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -259,14 +259,14 @@
   </url>
   
   <url>
-    <loc>https://abalone27.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
+    <loc>https://abalone27.github.io/categories/DIP/</loc>
     <lastmod>2024-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://abalone27.github.io/categories/DIP/</loc>
+    <loc>https://abalone27.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
     <lastmod>2024-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
