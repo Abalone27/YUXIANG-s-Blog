@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Abalone27&#39;s Blog</title>
+  <title>YuXiang Bao&#39;s Blog</title>
   
-  
+  <subtitle>分享计算机学习知识，来看看吧🥳</subtitle>
   <link href="https://abalone27.github.io/atom.xml" rel="self"/>
   
   <link href="https://abalone27.github.io/"/>
@@ -15,11 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <follow_challenge>
-      <feedId>90781911467253760</feedId>
-      <userId>kOAosBok3objkXiqt3V4j</userId>
-  </follow_challenge>
   
   <entry>
     <title>TaiwindCSS基本使用</title>
