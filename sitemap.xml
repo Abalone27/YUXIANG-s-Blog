@@ -10,6 +10,11 @@
     <priority>0.6</priority>
   </url>
   
+  <follow_challenge>
+      <feedId>90805011758955520</feedId>
+      <userId>kOAosBok3objkXiqt3V4j</userId>
+  </follow_challenge>
+  
   <url>
     <loc>https://ethanbao27.github.io/2024/11/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/</loc>
     
