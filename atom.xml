@@ -6,7 +6,7 @@
   <link href="https://abalone27.github.io/atom.xml" rel="self"/>
   
   <link href="https://abalone27.github.io/"/>
-  <updated>2024-11-04T07:30:10.295Z</updated>
+  <updated>2024-12-14T16:13:47.184Z</updated>
   <id>https://abalone27.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TaiwindCSS基本使用</title>
+    <link href="https://abalone27.github.io/2024/12/14/Taiwind%20css%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>https://abalone27.github.io/2024/12/14/Taiwind%20css%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</id>
+    <published>2024-12-14T15:55:24.000Z</published>
+    <updated>2024-12-14T16:13:47.184Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="taiwindcss">Taiwindcss</h1><ul><li>用于react 的application ui组件库</li></ul><h3 id="installation">Installation</h3><h4 id="不使用react">不使用React</h4><p>创建tailwind.config.js file和download</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -D tailwindcss</span><br><span class="line">npx tailwindcss init</span><br></pre></td></tr></table></figure><p>在配置文件中添加模板文件路径</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/** @<span class="built_in">type</span> &#123;import(<span class="string">&#x27;tailwindcss&#x27;</span>).Config&#125; */</span><br><span class="line">module.exports = &#123;</span><br><span class="line">  content: [<span class="string">&quot;./src/**/*.&#123;html,js&#125;&quot;</span>],</span><br><span class="line">  theme: &#123;</span><br><span class="line">    extend: &#123;&#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>在主css文件添加@taiwind 指令</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@tailwind</span> base;</span><br><span class="line"><span class="keyword">@tailwind</span> components;</span><br><span class="line"><span class="keyword">@tailwind</span> utilities;</span><br></pre></td></tr></table></figure><p>完成，可以在html中使用taiwind添加class类名了</p><h4 id="如果使用vite驱动框架">如果使用Vite驱动框架：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install tailwindcss@next @tailwindcss/vite@next</span><br></pre></td></tr></table></figure><p>在vite.config.ts：</p><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; defineConfig &#125; <span class="keyword">from</span> <span class="string">&#x27;vite&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> tailwindcss <span class="keyword">from</span> <span class="string">&#x27;@tailwindcss/vite&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    <span class="title function_">tailwindcss</span>()</span><br><span class="line">  ],</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>导入主css文件：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> <span class="string">&quot;tailwindcss&quot;</span>;</span><br></pre></td></tr></table></figure><h4 id="使用react">使用React</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** <span class="doctag">@type</span> &#123;<span class="type">import(&#x27;tailwindcss&#x27;).Config</span>&#125; */</span></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">content</span>: [</span><br><span class="line">    <span class="string">&quot;./src/**/*.&#123;js,jsx,ts,tsx&#125;&quot;</span>,</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">theme</span>: &#123;</span><br><span class="line">    <span class="attr">extend</span>: &#123;&#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">plugins</span>: [],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>在css中：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@tailwind</span> base;</span><br><span class="line"><span class="keyword">@tailwind</span> components;</span><br><span class="line"><span class="keyword">@tailwind</span> utilities;</span><br></pre></td></tr></table></figure><h3 id="bg-color">bg color</h3><p>不同灰度级的背景色调色盘</p><p><strong>css类</strong>:bg-black/white/slate(偏蓝灰)-(100-950),gray,zinc(纯灰),neutral, stone,red,orange,amber,lime....</p><p>设置<strong>不透明度</strong>：e.g.bg-sky-500<strong>/100,75,50</strong></p><p>其他状态：hover:b-cyan-600</p><h3 id="w">w</h3><p>w-4 代表<strong>1rem</strong></p><p>w-1 0.25rem</p><p>w-px 使用像素</p><p>w-1/2 分数设置百分比</p><p>w-full 全宽</p><p>w-screen 视口宽度</p><p>min-w- 最小宽度</p><p><strong>媒体查询</strong>md:min-w-0 在中等屏幕尺寸下应用</p><h3 id="h">h</h3><p>与w同理</p><p>h-dvh 动态视口高度</p><p>h-lvh 最大视口高度</p><p>h-svh 最小</p><h3 id="size">size</h3><p>与w，h同理，同时设置wh</p><h3 id="text">text</h3><p>xs，sm，base，lg，xl，2xl，4xl</p><p><strong>font-bold</strong></p><h3 id="rounded">rounded</h3><p>=border 同text</p><h4 id="flex">flex</h4><p>flex设置为弹性布局</p><p>flex-row flex-col设置主轴</p><p>flex-wrap 换行</p><p>justify-center 沿主轴居中</p><p>justify-between/around/evenly</p><p>items-center...</p><p>gap 设置子元素艰巨</p><h3 id="m">m</h3><p>设置margin</p><p>mx-4 my-4 水平和垂直方向</p><p>mt mr mb ml 上下左右方向</p><p>-m-4 负值</p><h3 id="p">p</h3><p>设置padding</p><p>同m</p><h3 id="transform">transform</h3><p>Transform 设置变换效果</p><p><strong>translate 平移</strong> -x-4 -y-2</p><p>rotate-45 顺时针</p><p>scale-110 缩放1.1倍</p><p>skew-x-12 倾斜度数</p><h3 id="transition">transition</h3><p>transition 过渡</p><p>transition-colors 渐变颜色</p><p><strong>transition-transform 变换相关属性进行过渡</strong></p><p>duration-300 持续时间300ms</p><p>ease-in/out/in-out 缓动函数</p><p>delay-200 延迟ms</p><h3 id="animation">animation</h3><p>animation-ping 逐渐淡出</p><p>-bounce 弹跳动画</p><p>-spin 旋转动画</p><p>-pulse 呼吸动画</p><h3 id="响应式">响应式</h3><p>sm: md: lg:</p><h3 id="状态类">状态类</h3><p>hover: active: focus:</p>]]></content>
+    
+    
+    <summary type="html">介绍前端css快捷开发框架，tailwindcss的基本类名。</summary>
+    
+    
+    
+    <category term="前端" scheme="https://abalone27.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="https://abalone27.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="css" scheme="https://abalone27.github.io/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机网络考试复习（详细版）</title>
@@ -33,11 +56,11 @@
     <category term="Network" scheme="https://abalone27.github.io/categories/Network/"/>
     
     
-    <category term="复习" scheme="https://abalone27.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
-    
     <category term="计算机网络" scheme="https://abalone27.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     <category term="网络协议" scheme="https://abalone27.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
+    
+    <category term="复习" scheme="https://abalone27.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
     
   </entry>
   
@@ -58,11 +81,11 @@
     <category term="Network" scheme="https://abalone27.github.io/categories/Network/"/>
     
     
-    <category term="复习" scheme="https://abalone27.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
-    
     <category term="计算机网络" scheme="https://abalone27.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     <category term="网络协议" scheme="https://abalone27.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
+    
+    <category term="复习" scheme="https://abalone27.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
     
   </entry>
   
@@ -90,11 +113,11 @@
     <category term="OS" scheme="https://abalone27.github.io/categories/OS/"/>
     
     
+    <category term="复习" scheme="https://abalone27.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
     <category term="操作系统" scheme="https://abalone27.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="死锁" scheme="https://abalone27.github.io/tags/%E6%AD%BB%E9%94%81/"/>
-    
-    <category term="复习" scheme="https://abalone27.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
     
   </entry>
   
