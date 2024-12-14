@@ -10,11 +10,6 @@
     <priority>0.6</priority>
   </url>
   
-  <follow_challenge>
-      <feedId>90805011758955520</feedId>
-      <userId>kOAosBok3objkXiqt3V4j</userId>
-  </follow_challenge>
-  
   <url>
     <loc>https://ethanbao27.github.io/2024/11/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/</loc>
     
@@ -152,6 +147,27 @@
   </url>
   
   <url>
+    <loc>https://ethanbao27.github.io/tags/ajax/</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ethanbao27.github.io/tags/%E5%BC%82%E6%AD%A5/</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ethanbao27.github.io/tags/javascript/</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ethanbao27.github.io/tags/css/</loc>
     <lastmod>2024-12-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -194,6 +210,13 @@
   </url>
   
   <url>
+    <loc>https://ethanbao27.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%88%AA/</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ethanbao27.github.io/tags/JPEG/</loc>
     <lastmod>2024-12-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -228,34 +251,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://ethanbao27.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%88%AA/</loc>
-    <lastmod>2024-12-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ethanbao27.github.io/tags/ajax/</loc>
-    <lastmod>2024-12-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ethanbao27.github.io/tags/%E5%BC%82%E6%AD%A5/</loc>
-    <lastmod>2024-12-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ethanbao27.github.io/tags/javascript/</loc>
-    <lastmod>2024-12-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -280,14 +275,14 @@
   </url>
   
   <url>
-    <loc>https://ethanbao27.github.io/categories/DIP/</loc>
+    <loc>https://ethanbao27.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
     <lastmod>2024-12-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ethanbao27.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
+    <loc>https://ethanbao27.github.io/categories/DIP/</loc>
     <lastmod>2024-12-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
