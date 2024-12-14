@@ -16,6 +16,11 @@
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
+  <follow_challenge>
+      <feedId>90781911467253760</feedId>
+      <userId>kOAosBok3objkXiqt3V4j</userId>
+  </follow_challenge>
+  
   <entry>
     <title>TaiwindCSS基本使用</title>
     <link href="https://abalone27.github.io/2024/12/14/Taiwind%20css%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
