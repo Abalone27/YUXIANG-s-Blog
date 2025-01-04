@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ethanbao27.github.io/2025/01/04/2025%E5%B9%B4%EF%BC%8C%E6%88%91%E9%80%89%E6%8B%A9%E4%BA%86%E5%89%8D%E7%AB%AF/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ethanbao27.github.io/about/index.html</loc>
     
     <lastmod>2025-01-03</lastmod>
@@ -251,6 +260,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://ethanbao27.github.io/tags/%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2025-01-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -283,6 +299,13 @@
   
   <url>
     <loc>https://ethanbao27.github.io/categories/DIP/</loc>
+    <lastmod>2025-01-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ethanbao27.github.io/categories/%E6%80%9D%E8%80%83/</loc>
     <lastmod>2025-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
