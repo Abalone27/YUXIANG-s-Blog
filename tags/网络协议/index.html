@@ -430,36 +430,15 @@
             <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" alt="loading">
             <div class="container container-unloaded">
                 <main class="main index-page">
+            
         <article class="index-post">
             <a class="abstract-title" href="/2024/11/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/">
                 <span class="abstract-title-text">计算机网络考试复习（详细版）</span>
             </a>
             <div class="abstract-content">
-                <h1 id="计算机网络总复习">计算机网络总复习</h1>
-<h2 id="第一章-概述">第一章 概述</h2>
-<p>计算机网络：结点node（计算器、交换机、路由器）+链路link</p>
-<p>功能：数据通信、资源共享</p>
-<p>Internet TCP/IP ISP 局域网与广域网</p>
-<blockquote>
-<p><strong>电路交换</strong>：突发式传输、适用低频</p>
-<p><code>传输时间少、有序到达、但要建立连接、不灵活、利用率低、无差错控制</code></p>
-<p><strong>报文交换</strong>：无需连接、存储转发、利用率较高、差错控制、重传代价高</p>
-<p><code>无需连接、有序到达、但转发时延高</code></p>
-<p><strong>分组交换</strong>：无需连接、存储转发、分组定长（拆分为多个分组）、重传代价低</p>
-<p><code>更加灵活，前面两种的折中、利用率非常高、传输时间少、支持差错控制、但需要携带很多额外控制信息、且不是有序到达</code></p>
-</blockquote>
-<h4 id="网络分类">网络分类</h4>
-<p>WAN、MAN（城域网）、LAN、PAN（个域网）</p>
-<p>广播、点对点</p>
-<p>总线型（争用问题）、环形、星型（点对点）、网状（灵活但控制复杂线路成本高）</p>
+                
             </div>
             <!-- read more -->
-                <div class="abstract-read-more-button">
-                    <a href="/2024/11/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/">
-                        <span style="margin-right: 0.2rem;">阅读全文</span>
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </div>
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2024/11/04">
@@ -481,39 +460,15 @@
             </div>
         </article>
         <div class="index-post-divider"></div>
+            
         <article class="index-post">
             <a class="abstract-title" href="/2024/10/27/%E4%BA%94%E5%B1%82%E7%BB%93%E6%9E%84%E5%8D%8F%E8%AE%AE%E5%A4%8D%E4%B9%A0/">
                 <span class="abstract-title-text">🛜五层体系结构协议复习</span>
             </a>
             <div class="abstract-content">
-                <h1 id="五层体系结构协议复习">🛜五层体系结构协议复习</h1>
-<p>首先我们需要了解为什么计算机网络要学习<strong>五层结构模型（TCP/IP模型）</strong>，因为这更简化，便于我们了解实际网络协议，并且更贴近现实的网络组成。</p>
-<p>而七层模型（OSI）则是由<strong>国际标准化组织ISO</strong>制定的，为网络设计提供了框架，这其实是一个概念模型，虽然在实际上不常用，但为网络设计提供了参考。</p>
-<h2 id="层">层</h2>
-<p>让我们来看一下五层和七层有哪些层次，七层实际上在五层基础上加了两层：</p>
-<ul>
-<li>物理层 Physical</li>
-<li>数据链路层 Data Link</li>
-<li>网络层 Network</li>
-<li>传输层 Transport
-<ul>
-<li>会话层 Session</li>
-<li>表示层 Presentation</li>
-</ul></li>
-<li>应用层 Application</li>
-</ul>
-<p>对于学过计网的人来说，夹在第四和第五之间的两个层或许不太熟悉，我们来介绍一下。<strong>会话层</strong>负责建立、管理和终止应用程序之间的会话。可见主要是Socket的建立和关闭操作。因为<strong>传输层</strong>只负责端到端的可靠传输，而给上层提供接口靠的是Session层；再看看<strong>表示层</strong>，它负责处理数据表示形式，包括加密、解密、压缩和格式化，确保不同系统之间的数据能正确解释，例如SSL/TLS加密、JPEG格式转换。可见表示层更切近应用层的具体应用。</p>
-<p>让我们回归正题，复习一下五层结构的各类协议/技术。</p>
-<h2 id="物理层">物理层</h2>
-<p>实现设备之间的比特传输，定义物理连接（相邻的主机到主机）的标准。</p>
+                
             </div>
             <!-- read more -->
-                <div class="abstract-read-more-button">
-                    <a href="/2024/10/27/%E4%BA%94%E5%B1%82%E7%BB%93%E6%9E%84%E5%8D%8F%E8%AE%AE%E5%A4%8D%E4%B9%A0/">
-                        <span style="margin-right: 0.2rem;">阅读全文</span>
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </div>
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2024/10/31">

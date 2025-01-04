@@ -430,36 +430,15 @@
             <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" alt="loading">
             <div class="container container-unloaded">
                 <main class="main index-page">
+            
         <article class="index-post">
             <a class="abstract-title" href="/2024/11/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/">
                 <span class="abstract-title-text">计算机网络考试复习（详细版）</span>
             </a>
             <div class="abstract-content">
-                <h1 id="计算机网络总复习">计算机网络总复习</h1>
-<h2 id="第一章-概述">第一章 概述</h2>
-<p>计算机网络：结点node（计算器、交换机、路由器）+链路link</p>
-<p>功能：数据通信、资源共享</p>
-<p>Internet TCP/IP ISP 局域网与广域网</p>
-<blockquote>
-<p><strong>电路交换</strong>：突发式传输、适用低频</p>
-<p><code>传输时间少、有序到达、但要建立连接、不灵活、利用率低、无差错控制</code></p>
-<p><strong>报文交换</strong>：无需连接、存储转发、利用率较高、差错控制、重传代价高</p>
-<p><code>无需连接、有序到达、但转发时延高</code></p>
-<p><strong>分组交换</strong>：无需连接、存储转发、分组定长（拆分为多个分组）、重传代价低</p>
-<p><code>更加灵活，前面两种的折中、利用率非常高、传输时间少、支持差错控制、但需要携带很多额外控制信息、且不是有序到达</code></p>
-</blockquote>
-<h4 id="网络分类">网络分类</h4>
-<p>WAN、MAN（城域网）、LAN、PAN（个域网）</p>
-<p>广播、点对点</p>
-<p>总线型（争用问题）、环形、星型（点对点）、网状（灵活但控制复杂线路成本高）</p>
+                
             </div>
             <!-- read more -->
-                <div class="abstract-read-more-button">
-                    <a href="/2024/11/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/">
-                        <span style="margin-right: 0.2rem;">阅读全文</span>
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </div>
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2024/11/04">
@@ -481,39 +460,15 @@
             </div>
         </article>
         <div class="index-post-divider"></div>
+            
         <article class="index-post">
             <a class="abstract-title" href="/2024/10/27/%E4%BA%94%E5%B1%82%E7%BB%93%E6%9E%84%E5%8D%8F%E8%AE%AE%E5%A4%8D%E4%B9%A0/">
                 <span class="abstract-title-text">🛜五层体系结构协议复习</span>
             </a>
             <div class="abstract-content">
-                <h1 id="五层体系结构协议复习">🛜五层体系结构协议复习</h1>
-<p>首先我们需要了解为什么计算机网络要学习<strong>五层结构模型（TCP/IP模型）</strong>，因为这更简化，便于我们了解实际网络协议，并且更贴近现实的网络组成。</p>
-<p>而七层模型（OSI）则是由<strong>国际标准化组织ISO</strong>制定的，为网络设计提供了框架，这其实是一个概念模型，虽然在实际上不常用，但为网络设计提供了参考。</p>
-<h2 id="层">层</h2>
-<p>让我们来看一下五层和七层有哪些层次，七层实际上在五层基础上加了两层：</p>
-<ul>
-<li>物理层 Physical</li>
-<li>数据链路层 Data Link</li>
-<li>网络层 Network</li>
-<li>传输层 Transport
-<ul>
-<li>会话层 Session</li>
-<li>表示层 Presentation</li>
-</ul></li>
-<li>应用层 Application</li>
-</ul>
-<p>对于学过计网的人来说，夹在第四和第五之间的两个层或许不太熟悉，我们来介绍一下。<strong>会话层</strong>负责建立、管理和终止应用程序之间的会话。可见主要是Socket的建立和关闭操作。因为<strong>传输层</strong>只负责端到端的可靠传输，而给上层提供接口靠的是Session层；再看看<strong>表示层</strong>，它负责处理数据表示形式，包括加密、解密、压缩和格式化，确保不同系统之间的数据能正确解释，例如SSL/TLS加密、JPEG格式转换。可见表示层更切近应用层的具体应用。</p>
-<p>让我们回归正题，复习一下五层结构的各类协议/技术。</p>
-<h2 id="物理层">物理层</h2>
-<p>实现设备之间的比特传输，定义物理连接（相邻的主机到主机）的标准。</p>
+                
             </div>
             <!-- read more -->
-                <div class="abstract-read-more-button">
-                    <a href="/2024/10/27/%E4%BA%94%E5%B1%82%E7%BB%93%E6%9E%84%E5%8D%8F%E8%AE%AE%E5%A4%8D%E4%B9%A0/">
-                        <span style="margin-right: 0.2rem;">阅读全文</span>
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </div>
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2024/10/31">
@@ -535,35 +490,15 @@
             </div>
         </article>
         <div class="index-post-divider"></div>
+            
         <article class="index-post">
             <a class="abstract-title" href="/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/">
                 <span class="abstract-title-text">OS：处理机调度与死锁🔒</span>
             </a>
             <div class="abstract-content">
-                <h1 id="处理机调度与死锁">处理机调度与死锁🔒</h1>
-<blockquote>
-<p>Q:如果系统只有一个cpu,有两个进程要运行.进程A的运行时间将是1小时,进程B的运行时间是1分钟.那么认为操作系统让哪个进程先运行比较合理?</p>
-</blockquote>
-<p>A：与操作系统的调度策略有关，即更重视优先级还是到来顺序、时长等因素。</p>
-<h2 id="调度">调度</h2>
-<p>对处理机（CPU）资源进行分配。</p>
-<h3 id="调度层次">调度层次</h3>
-<p>高级（作业）调度、中级（内存）调度、低级（进程）调度。</p>
-<p>区分主要是运行频率，<strong>低级调度最频繁</strong>，也是重点。</p>
-<figure>
-<img src="/images/diaodu1.png" alt="调度等级">
-<figcaption aria-hidden="true">调度等级</figcaption>
-</figure>
-<p><strong>后备队列</strong>（Spooling Queue 或 Backup
-Queue）是指操作系统或系统调度过程中用于存放<strong>尚未进入内存执行的进程或任务</strong>的队列。根据实际情况，后备队列可以位于<strong>外存</strong>或与外存相关的区域，而非内存。</p>
+                
             </div>
             <!-- read more -->
-                <div class="abstract-read-more-button">
-                    <a href="/2024/10/26/chapter%203%20%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E4%B8%8E%E6%AD%BB%E9%94%81/">
-                        <span style="margin-right: 0.2rem;">阅读全文</span>
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </div>
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2024/10/27">
